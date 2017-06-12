@@ -1,0 +1,9 @@
+conda env remove -n self-driving-car-term2
+conda env create -f environment.yaml
+conda env list
+source activate self-driving-car-term2
+jupyter notebook
+source deactivate self-driving-car-term2
+conda install -c plotly plotly=1.3.2
+jupyter notebook --NotebookApp.iopub_data_rate_limit=10000000000
+
